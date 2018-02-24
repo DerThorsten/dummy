@@ -7,5 +7,5 @@ channels:
 dependencies:
   - cmake
   - xtensor
-  - xtenor-python
+  - xtensor-python
   - breathe
