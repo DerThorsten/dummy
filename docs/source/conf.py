@@ -18,7 +18,7 @@ import sphinx_rtd_theme
 if True:
 
     cmake_defs = "-DDOWNLOAD_DOCTEST=OFF -DBUILD_TEST=OFF  -DBUILD_EXAMPLES=OFF -DDOWNLOAD_GOOGLE_BENCHMARK=OFF -DBUILD_BENCHMARK=OFF"
-    cmake_py_ver = ""#-DPYTHON_EXECUTABLE=$HOME/conda/latest/bin/python3.5"
+    cmake_py_ver = "-DPYTHON_EXECUTABLE=%s"%(str(sys.executable),)
     subprocess.call('cd ../.. && cmake . %s %s && make -j2'%(cmake_defs, cmake_py_ver),          shell=True)
 
     #subprocess.call('cd ../.. && make install .',   shell=True)
