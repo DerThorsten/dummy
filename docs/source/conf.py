@@ -16,7 +16,10 @@ import sphinx_rtd_theme
 
 
 if True:
-    subprocess.call('cd ../.. && cmake . && make -j2',          shell=True)
+
+    cmake_defs = "-DDOWNLOAD_DOCTEST=OFF -DBUILD_TEST=OFF  -DBUILD_EXAMPLES=OFF -DDOWNLOAD_GOOGLE_BENCHMARK=OFF -DBUILD_BENCHMARK=OFF"
+
+    subprocess.call('cd ../.. && cmake . %s && make -j2'%(cmake_defs),          shell=True)
 
     #subprocess.call('cd ../.. && make install .',   shell=True)
 
