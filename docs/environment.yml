@@ -3,9 +3,10 @@ name: cpptools-docs
 channels:
   - cmake 
   - conda-forge
-
+  - dgursoy
 dependencies:
   - cmake
   - xtensor
   - xtensor-python
   - breathe
+  - gcc-5 
