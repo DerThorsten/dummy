@@ -17,6 +17,7 @@ import sphinx_rtd_theme
 
 if True:
     subprocess.call('cd ../.. && cmake . && make -j2',          shell=True)
+
     #subprocess.call('cd ../.. && make install .',   shell=True)
 
 sys.path.append(os.path.abspath('../../python'))
