@@ -1,0 +1,11 @@
+name: cpptools-docs
+
+channels:
+  - cmake 
+  - conda-forge
+
+dependencies:
+  - cmake
+  - xtensor
+  - xtenor-python
+  - breathe
