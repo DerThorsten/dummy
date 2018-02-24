@@ -61,9 +61,9 @@ if(DOWNLOAD_DOCTEST OR DOCTEST_SRC_DIR)
     set(BUILD_TESTS ON)
 endif()
 
-if(BUILD_TESTS)
-    add_subdirectory(test)
-endif()
+# if(BUILD_TESTS)
+#     add_subdirectory(test)
+# endif()
 
 
 
@@ -76,9 +76,9 @@ if(DOWNLOAD_GOOGLE_BENCHMARK OR GOOGLE_BENCHMARK_SRC_DIR)
     set(BUILD_BENCHMARK ON)
 endif()
 
-if(BUILD_BENCHMARK)
-    add_subdirectory(benchmark)
-endif()
+# if(BUILD_BENCHMARK)
+#     add_subdirectory(benchmark)
+# endif()
 
 
 # Examples
@@ -86,9 +86,9 @@ endif()
 OPTION(BUILD_EXAMPLES "${PROJECT_NAME} test suite" ON)
 
 
-if(BUILD_EXAMPLES)
-    add_subdirectory(examples)
-endif()
+# if(BUILD_EXAMPLES)
+#     add_subdirectory(examples)
+# endif()
 
 
 
