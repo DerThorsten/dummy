@@ -5,6 +5,7 @@ channels:
   - conda-forge
   #- dgursoy
 dependencies:
+  - python=3.5
   - cmake
   - xtensor
   - xtensor-python
